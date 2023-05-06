@@ -61,7 +61,8 @@ function createLiElement(allBreeds) {
 ulContainer.addEventListener('click', handleClick)
 
 function handleClick(event) {
-     event.target.style.color = '#ED69CB'
+    if (event.target.nodeName === 'LI'){
+     event.target.style.color = '#ED69CB'}
 }
 
 const dropdown = document.querySelector("#breed-dropdown")
